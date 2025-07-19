@@ -101,6 +101,16 @@ banner */
 .max-img{
     width:100% ;
 }
+.sub-title{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: bold;
+    margin: 0;
+}
+body > section{
+    margin-top: 130px;
+}
+
 /*navbar*/
 .navbar{
     justify-content: space-between;
@@ -176,25 +186,147 @@ main{
     color:#FF900E;
 }
 
+/*fact-container*/
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   gap: 100px;
+   margin-top: 50px;
+  
+    
+}
+.fact-details{
+    border: solid 1px chocolate;
+   padding: 40px 0;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
 
+.fact-num{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 20PX;
+    margin-bottom: 10PX;
+}
+.fact-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+     margin-top: 20PX;
+}
+.Fac-title{
+    margin: 5px 0;
+}
+/*sponspors*/
+.sponspors{
+  width: 542px;
+  text-align: center;
+  margin: 0 auto;
+   }
+.spon-sub{
+   
 
+}
+.spon-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+    gap: 124px; ;
+    
+}
+.spon-img img{
+    filter: grayscale(100%);
+    
+}
+footer{
+    background-color: #fff4e7;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*our-Features*/
+.our-Features{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.boder{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.featute-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    border-radius: 8px;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #131313;
+    margin: 15px 0;
+}
+.card-sub{
+    font-size: 1rem;
+
+    color: #727272;
+}
+#big-text{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.fea-btn{
+    margin-top: -70px;
+    margin-left: -60px;
+}
 /*responsive*/
 @media screen and (max-width:576px) {
-    .navbar, .navbar ul, .team{
+    .navbar, .navbar ul, .team,.our-Features{
         flex-direction: column;
     }
     .navbar h3{
     margin: 0 auto;
     margin-top: 20px;
     }
-.team-img{
+.team-img ,.spon-img{
     grid-template-columns: 1fr;
 }
 .feature{
 text-align: center;
 }
-    
+.fact-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
+.Facts{
+    text-align: center;
+}
+.fact-details{
+width: 240px;
+height: 240px;
+margin: 0 auto;
+}
+.spon-sub{
+margin: 0 auto;
+}
+.spon-img{
+   justify-items: center;
+   gap: 50px;
+}
+  .fea-btn{
+display: none;
+  
+}  
+}
+
 
 
 
